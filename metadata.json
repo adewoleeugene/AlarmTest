@@ -1,0 +1,7 @@
+{
+  "name": "Geo-Aware Focus Alarm",
+  "description": "An intelligent alarm system that activates based on time and deactivates when you reach your destination. It also helps you stay focused by launching a special focus mode when the alarm goes off.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
