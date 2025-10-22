@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bellShadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#0f172a" stroke="#22d3ee" stroke-width="4"/>
+  
+  <!-- Bell body -->
+  <path d="M256 80 C 200 80, 150 120, 150 180 L 150 220 C 150 240, 160 260, 180 280 L 180 300 C 180 320, 200 340, 220 340 L 292 340 C 312 340, 332 320, 332 300 L 332 280 C 352 260, 362 240, 362 220 L 362 180 C 362 120, 312 80, 256 80 Z" fill="url(#bellGradient)"/>
+  
+  <!-- Bell clapper -->
+  <circle cx="256" cy="200" r="8" fill="#0f172a"/>
+  <line x1="256" y1="208" x2="256" y2="250" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="256" cy="250" r="12" fill="#0f172a"/>
+  
+  <!-- Bell rim highlight -->
+  <path d="M 180 220 C 200 200, 312 200, 332 220" stroke="#67e8f9" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Sound waves -->
+  <path d="M 120 300 Q 140 320, 160 300 Q 180 280, 200 300" stroke="#22d3ee" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 312 300 Q 332 320, 352 300 Q 372 280, 392 300" stroke="#22d3ee" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+</svg>

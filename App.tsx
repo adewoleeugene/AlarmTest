@@ -4,6 +4,7 @@ import { useGeolocation, haversineDistance } from './hooks/useGeolocation';
 import { AlarmCard } from './components/AlarmCard';
 import { LocationManager } from './components/LocationManager';
 import { FocusModeOverlay } from './components/FocusModeOverlay';
+import { InstallPrompt } from './components/InstallPrompt';
 import { BellIcon } from './components/icons/BellIcon';
 import { PlusIcon } from './components/icons/PlusIcon';
 
@@ -238,6 +239,7 @@ const App: React.FC = () => {
     return (
         <>
             {ringingAlarm && <FocusModeOverlay alarm={ringingAlarm} onDismiss={handleDismissFocusMode} />}
+            <InstallPrompt />
             <LocationManager
                 isOpen={isLocationManagerOpen}
                 onClose={() => { setIsLocationManagerOpen(false); setEditingAlarmId(null); }}
